@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0; 
+    height: 100%;
+    width: 100%; 
+}
+
+.header {
+    display: flex;
+}
+
+.header-logo {
+    display: flex;
+    margin-left: 0;
+}
+
+.header-logo p{
+    font-size: 25px;
+    margin-top: 15px;
+}
+.nav-item a{
+    color: #2603FF !important;
+}
+.navbar{
+    background-color: white !important;
+    padding: 0 0 !important;
+}
+.outpass{
+    width: 100%;
+    background-image: url("http://localhost:8004/rkv_dorms.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    
+}
+.outpass-form{
+    position: relative;
+    width: 50%; 
+    background-color: white;
+    margin: 10% auto;
+    border-radius: 15px;
+    padding: 20px 30px 30px 35px;
+}
+
+.outpass-form h5{
+    color:#AF04FF;
+    font-size: 21px;
+    text-align: center;
+}
+.outpass-fields label{
+    color: #420b0b;
+}
+.outpass-fields input{
+    color: #130562;
+}
+.outpass-fields{
+    font-size: 19px;
+}
+
+.outpass-user-info{
+    outline: none;
+    border: none;
+    
+}
+.outpass-readonly-fields{
+    display: flex;
+    margin-top: 10px;
+    height: 30px;
+}
+.outpass-editing-labels{
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.outpass-readonly-fields label{
+   width: 110px;
+}
+.outpass-readonly-fields input{
+    margin-left: 35px;
+    width: 100%;
+    outline: none;
+}
+.outpass-fields textarea{
+    outline: none;
+    width: 100%;
+}
+.outpass-submit{
+    font-size: 17px;
+    margin: 35px 0;
+    text-align: center;
+    
+}
+.outpass-submit input{
+    padding: 5px 35px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background-color: #2603FF;
+    color: white;
+}
+.outpass-submit input:hover{
+    background-color: white;
+    color: #2603FF;
+    border: 1px solid #2603FF;
+}
+.footer{
+    position: static;
+    width: 100%;
+    height: 30px;
+    background-color: #BFB2B2;
+    text-align: center;
+    color: white;
+        
+}
+.footer p{
+    padding-top: 3px;
+}
+
+
+@media screen and (max-width:500px) {
+    .outpass{
+        width: 200%;
+    }
+    .outpass-form{
+        width: 500px;
+        margin: 150px 0;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}

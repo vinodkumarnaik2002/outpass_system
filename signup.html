@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<title>sing up</title>
+</head>
+<body>
+
+<form action="submit2.php" method="POST">
+
+   	 <legend>PERSONAL DETAILS</legend>
+
+    <div class="notifications">
+      <label id="uname-label" for="name">USERNAME:</label>
+      <input type="text" id="uname" name="username" placeholder="Enter name here" required>  </div>
+      <div class="notifications">
+      <label id="id-label" for="phone">ID NUMBER:</label>
+      <input type="text" id=" idnumber" name="userid" placeholder="Enter your id number" max="7" required>  </div>
+    <div class="notifications">
+      <label for="pwd-label">PASSWORD</label>
+      <input type="password" id="pwd" name="pwd" placeholder="Enter address here" required>   </div>
+    <div class="notifications">
+      <label id="email-label" for="Email">EMAIL:</label>
+      <input type="email"  id="email" name="useremail" placeholder="Enter email here" required >
+  	<br>    </div>
+    <div class="notifications">
+      <label id="number-label" for="phone">PHONE NUMBER:</label>
+      <input type="telnum" id="pnum" name="phone" placeholder="Enter 10 digit number" required >
+    <br>   </div>
+         <div class="submit">
+         <input type="submit" value="signup" id="btn" name="but_submit" style="margin: 30px 0; ">
+                <input type="reset" value="cancel" id="btn" name="but_cancel" style="margin: 30px 0; ">
+	</div>
+      
+ </form>
+ </body>
+ </html>
+ 

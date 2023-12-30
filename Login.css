@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;   
+}
+
+.header {
+    display: flex;
+}
+
+.header-logo {
+    display: flex;
+    margin-left: 0;
+}
+
+.header-logo p{
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.nav-item a{
+    color: #2603FF !important;
+}
+.navbar{
+    background-color: white !important;
+    padding: 0 0 !important;
+}
+
+.login{
+    background-image: url("http://localhost:8004/rkv_dorms.jpg");
+    height: 37.6rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    display: flex;
+    overflow-x: scroll;
+    /* hello there */
+}
+.login-form{
+    margin-top: 150px;
+    width: fit-content;
+    background-color: white;
+    padding: 20px 35px;
+    opacity: 0.8;
+    border-radius: 8px;
+    border: 0.5px solid black;
+    margin-left: 170px;
+}
+.login-form input{
+    width: 300px;
+    outline: none;
+    border-radius: 20px;
+    font-size: 18px;
+    padding-left: 10px;
+    border: 1px solid black;
+}
+.login-form .submit input{
+    background-color: #AC37F4;
+    color: white;
+    border: 1px solid #3674CF;
+    padding: 2px 0px;
+}
+.login-form label{
+    color: #351111;
+}
+.login-form .form-links{
+    color: #AF04FF;
+    cursor: pointer;
+}
+.login-form .form-links:hover{
+    font-size: 20px;
+}
+
+.login-dashboard{
+    background-color: white;
+    width: 400px;
+    padding: 15px 0;
+    margin-top: 150px;
+    height: 360px;
+    opacity: 0.8;
+    border-radius: 8px;
+    border: 1.2px solid rgba(0,0,0,0.6);
+    margin-left:150px;
+    overflow: hidden;
+}
+.login-dashboard .dash-info{
+    padding: 0px 10px 10px 10px;
+}
+.wrapper{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width:580px) {
+    .login{
+        display: block;
+    }
+    .login-form{
+        margin-left: 60px;
+    }
+    .login-dashboard{
+        margin-left: 45px;
+        margin-bottom: 50px;
+        margin-top: 45px;
+    }
+} 

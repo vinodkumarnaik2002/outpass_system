@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+    <title> OUTPASS</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="./project.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<div id="outside">
+<body>
+    <nav class="navbar navbar-light fixed-top navbar-expand-lg" id="header">
+        <div class="container-fluid">
+            <div class="header-logo">
+                <img src="http://localhost:8004/rkv_logo.png" alt="logo" width="70px" height="70px">
+                <p>RKV-DORMS</p>
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">RKV-DORMS</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="http://localhost:8004/Home.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8004/project.html">Outpass</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8004/Dashboard.html">Dash Board</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8004/about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8004/Login.html">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="dashboard">
+          <div class="dashboard-body">
+            <h5>OUTPASS APPLICATION</h5>
+
+            <div class="notifications">
+                <div class="notification">
+                
+<form action="submit.php" method="POST">
+
+ 	<h1 id="title" align='center'>APPLICATION FORM FOR OUTPASS</h1>
+	  <p id="description"><b>Note:</b> <b>Form is to be completed at least 7 days prior to date </b></p>
+ 	 <fieldset>
+
+   	 <legend>PERSONAL DETAILS</legend>
+
+    <div class="notifications">
+      <label id="name-label" for="name">NAME:</label>
+      <input type="text" id="uname" name="username" placeholder="Enter name here"> 
+      <span id='uerror'></span><br>  </div>
+      <div class="notifications">
+      <label id="id-label" for="phone">ID NUMBER:</label>
+      <input type="text" id=" idnumber" name="userid" placeholder="Enter your id number" max="7">  </div>
+    <div class="notifications">
+      <label for="address-label">ADDRESS:</label>
+      <input type="Address" id="address" name="Address" placeholder="Enter address here">   </div>
+    <div class="notifications">
+      <label id="email-label" for="Email">EMAIL:</label>
+      <input type="email"  id="email" name="useremail" placeholder="Enter email here">
+      <span id='eerror'></span><br>    </div>
+    <div class="notifications">
+      <label id="number-label" for="phone">PHONE NUMBER:</label>
+      <input type="telnum" id="pnum" name="phone" placeholder="Enter 10 digit number" >
+      <span id='nerror'></span><br>   </div>
+      
+    <div>
+      
+
+    <div>
+      <label for="Gender">GENDER</label>
+      <p>
+        <input type="radio" name="gender" value="male" checked> MALE<br>
+        <input type="radio" name="gender" value="female"> FEMALE<br>
+        <input type="radio" name="gender" value="other"> OTHERS
+      </p>
+    </div>
+    <label for="date-label">DATE OF PROPOSED OUT GOING:</label>
+    <input type="date" name="bday">
+  
+  </fieldset>
+
+  <fieldset>
+    <label for="journey">JOURNEY WITH WHOM</label>
+    <p>
+      <input type="checkbox" name="parent" value="tattoo"> PARENTS<br>
+      <input type="checkbox" name="age" value="Car">GAURDIAN<br>
+      <input type="checkbox" name="car" value="car"> SIBLINGS<br>
+      <input type="checkbox" name="work" value="work" checked> RELATIVES<br>
+
+    </p>
+  </fieldset>
+  
+  <fieldset>
+    <div>
+      <label for="HOSTEL">HOSTEL NAME:</label>
+      <select id="dropdown">
+  <option value="BH1F">BH1 FRONT SIDE</option>
+  <option value="BH1B">BH1 BACK SIDE</option>
+  <option value="BH2F">BH2 FRONT SIDE</option>
+  <option value="BH2B">BH2 BACK SIDE</option>
+  </select>
+
+      <label for="CAMPUS">CAMPUS NAME:</label>
+      <select id="dropdown2">
+  <option value="RK VALLEY">RKVALLEY</option>
+  <option value="ONGOLE">ONGOLE</option>
+  <option value="NUZVID">NUZVID</option>  
+  <option value="SRIKAKULAM">SRIKAKULAM</option>
+  </select>
+    </div>
+  </fieldset>
+
+  
+  <fieldset>
+    <legend>REASON</legend>
+    <div>
+      <label for="msg"></label>
+      <p> REASON FOR OUTPASS</p>
+      <textarea id="msg" name="message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <div>
+      <label for="msg">PARENT MOBILE NUMBER</label><br>
+      <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <p>IF ANY HEALTH ISSUES UPLOAD MEDICAL CERTIFICATES HERE:
+     <input type='file' id=upload>
+  </fieldset>
+
+  <div id="submitbutton">
+    <button type="submit" id="submit">SUBMIT</button>   
+<button type="RESET" id="submit">CANCEL</button>   </div>
+</form>
+
+
+          </div>
+          <div class="footer">
+            <b><p>IIIT-RK VALLEY <span>|</span> RGUKT-AP</p></b>
+          </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+  </div>
+<script>
+ alert('ARE YOU SURE ');
+</script>
+</body>
+</html>
